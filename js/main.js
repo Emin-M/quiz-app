@@ -34,17 +34,12 @@ const fetchQuestions = async (url) => {
 /* Spinner */
 const spinner = () => {
   let down = document.querySelector(".down");
-  down.innerHTML = "";
 
-  let div = document.createElement("div");
-  div.classList.add("spinner");
-  down.appendChild(div);
-
-  let spinner = document.querySelector(".spinner");
-
-  spinner.innerHTML = `
-              <div class="spinner-grow" role="status">
-                  <span class="visually-hidden">Loading...</span>
+  down.innerHTML = `
+              <div>
+                  <div class="spinner-grow" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                  </div>
               </div>`;
 };
 
